@@ -1,0 +1,76 @@
+@font-face {
+  font-family: LatoBold;
+  src: url(../fonts/Lato-Bold.woff2) format('woff2');
+}
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato-Regular.woff2) format('woff2');
+}
+
+.megamenu {
+  position: static;
+  .dropdown-menu {
+    width: 100%;
+    margin-top: 0;
+    border: 0;
+    border-radius: 0px;
+    background-color: $dark;
+    .dropdown-item {
+      color: $white;
+      background-color: transparent;
+      &:hover {
+        color: turquoise;
+      }
+    }
+  }
+}
+
+.navbar-light .nav-item .nav-link {
+  font-size: 14px;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  width: 120px;
+  color: $medium-gray;
+}
+
+.active-menu,
+.nav-link:hover {
+  height: 65px;
+  margin-bottom: -30px;
+  background-color: $dark;
+  color: $white !important;
+  border-bottom: 5px solid $green;
+}
+
+.dropdown-toggle::after {
+  transition: transform 0.15s linear;
+}
+
+.show.dropdown .dropdown-toggle::after {
+  transform: translateY(3px);
+}
+
+.actions-right {
+  margin-right: $margin-horizontal;
+}
+
+.logo {
+  margin-left: $margin-horizontal;
+}
+.logo-text {
+  margin: 2px 8px 0px;
+  font-size: 32px;
+  height: 25px;
+  letter-spacing: 6.33px;
+  font-weight: bold;
+  color: $dark-blue;
+  font-family: LatoBold, sans-serif;
+}
+.logo-text-small {
+  margin: 8px 8px 0px;
+  height: 23px;
+  font-size: 18px;
+  color: $green;
+  letter-spacing: 0px;
+  font-family: Lato, sans-serif;
+}
